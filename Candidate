@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Sep 15 22:33:37 2018
+
+@author: sharm
+"""
+
+import random
+import csv
+def g_0(n):
+    return ("?",)*n
+
+def s_0(n):
+    return ('0',)*n
+def more_general(h1, h2):
+    more_general_parts = []
+    for x, y in zip(h1, h2):
+        mg = x == "?" or (x != "0" and (x == y or y == "0"))
+        more_general_parts.append(mg)
+    return all(more_general_parts)
+
+l1 = [1, 2, 3]
+l2 = [3, 4, 5]
+
+list(zip(l1, l2))

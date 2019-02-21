@@ -13,6 +13,3 @@ From here print this text without manually counting the indexes."""
 a=str1.index('F')
 
 print(str1[a:])
-
-
-"This is to see if this file can be pulled in GIT"
